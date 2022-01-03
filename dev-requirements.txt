@@ -1,4 +1,4 @@
-pip-check-reqs==2.1.1
+pip-check-reqs==2.3.2
 setuptools==51.1.2
 pytest==6.2.1
 flake8==3.8.4
