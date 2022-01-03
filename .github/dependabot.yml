@@ -18,3 +18,11 @@ updates:
         versions:
           - ">= 0.8.a"
           - "< 0.9"
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    labels:
+      - "merge when green"
+      - "dependencies"
