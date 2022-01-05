@@ -1035,21 +1035,21 @@
             To restart the bot first ssh to 100.node4.net.fosshost.org.
             <pre>ssh (your username)@100.node4.net.fosshost.org</pre>
             Run the following command:
-            <pre>(your username)@100:~$ sudo service [mirahezebotprod|mirahezebottest] [start|stop|restart]</pre>
+            <pre>(your username)@100:~$ sudo service [mirahezebotprodlibera|mirahezebottestlibera] [start|stop|restart]</pre>
             <h2 id="improving-modules">Improving Modules</h2>
             See https://wiki.mirahezebots.org/wiki/Deploying_Changes
             <h2 id="config-changes">Configuration Changes</h2>
             1. ssh into the server<br/>
             2. cd into /srv/sopelbots/[test|prod]<br/>
-            3. Make any necessary changes to the config by editing default.cfg (ie: nano default.cfg or vim default.cfg) and save the file.<br/>
+            3. Make any necessary changes to the config by editing libera.cfg (ie: nano libera.cfg or vim libera.cfg) and save the file.<br/>
             4. Restart the bot using the guide above.
             <h2 id="cancel-reminder">Canceling Reminders</h2>
             To cancel a reminder first connect to the server.
             <pre>ssh (your username)@100.node4.net.fosshost.org
 (your username)@100:~$</pre>
-            Next cd into /srv/sopelbots/[test|prod] and edit *-chat.freenode.net.reminders.db and remove the entry for the reminder you want to cancel, and save the file.
+            Next cd into /srv/sopelbots/[test|prod] and edit libera.reminders.db and remove the entry for the reminder you want to cancel, and save the file.
             <pre>(your username)t@100:~$ cd /srv/sopelbots/[test|prod]
-(your username)@100:~/.sopel$ nano *-chat.freenode.net.reminders.db</pre>
+(your username)@100:~/.sopel$ nano libera.reminders.db</pre>
             Finally, follow <a href="#restarting-mhbots">the guide to restart the bot</a> above.
             <h2 id="update-website">Website Updates</h2>
             For most changes, simply merging will deploy within ~10 mins.
@@ -1057,7 +1057,7 @@
             <pre>ssh (your username)@100.node4.net.fosshost.org</pre>
             Next run puppet. This will pull in any new changes to the repository on GitHub.
             <pre>(your username)@100:~$ puppet-run</pre>
-            Go to mirahezebots.org and check to make sure your changes are present.
+            Go to mirahezebots.org and check to make sure your changes are present. If not ask MacFan4000, or RhinosF1 to clear the cache on Cloudflare.
         </div>
     {footer}
     </body>
