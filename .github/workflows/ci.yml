@@ -39,7 +39,7 @@ jobs:
           npm --version
       - name: Run tests
         run: |
-          flake8 --max-line-length 85 .
+          flake8 --max-line-length 90 .
           pytest .
           bandit . -r -s=B101
           pip check
