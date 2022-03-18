@@ -8,9 +8,9 @@ app = Flask(__name__)
 
 def display_content(path, config):
     """Generate the content for templated pages."""
-    with open(config['templatedpages'][path], 'r') as file:
+    with open(config['templatedpages'][path], 'r', encoding='utf-8') as file:
         contents = file.read()
-        with open(config['rendertemplates']['navbar'], 'r') as navbar:
+        with open(config['rendertemplates']['navbar'], 'r', encoding='utf-8') as navbar:
             navbarr = navbar.read()
             index = 'href="/"'
             docs = 'href="documentation"'
@@ -32,9 +32,9 @@ def display_content(path, config):
                 aboutlink=about,
                 sourcecodelink=sourcecode,
             )
-        with open(config['rendertemplates']['footer']) as footer:
+        with open(config['rendertemplates']['footer'], encoding='utf-8') as footer:
             footerr = footer.read()
-        with open(config['rendertemplates']['head']) as head:
+        with open(config['rendertemplates']['head'], encoding='utf-8') as head:
             headr = head.read()
             canonical = config['canonical-prefix']+path
             if path == 'index':
