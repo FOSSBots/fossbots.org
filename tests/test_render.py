@@ -18,3 +18,9 @@ def test_title_xss():
     content = display_content('index', XSS)
     assert '<title></title><img src=1 href=1 onerror="javascript:alert(1)"></img></title>' not in content  # noqa: E501 nosec
     assert '<title>&lt;/title&gt;&lt;img src=1 href=1 onerror=&#34;javascript:alert(1)&#34;&gt;&lt;/img&gt;</title>' in content  # noqa: E501 nosec
+
+
+def test_docs():
+    """Tests docs page."""
+    content = display_content('documentation.html', jp.createdict('./config.json')
+    assert 'Commands' in content  # nosec
