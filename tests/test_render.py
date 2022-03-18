@@ -22,5 +22,5 @@ def test_title_xss():
 
 def test_docs():
     """Tests docs page."""
-    content = display_content('documentation.html', jp.createdict('./config.json'))
+    content = display_content('documentation', jp.createdict('./config.json'))
     assert 'Commands' in content  # nosec
