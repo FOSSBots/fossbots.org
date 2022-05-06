@@ -11,7 +11,7 @@
       "robots.txt":"templates/robots.txt",
       "sitemap.xml":"templates/sitemap.xml",
       "css/common.css":"assets/common.css",
-      "logo.png":"assets/logo.png",
+      "logo.png":"assets/logo-new.png",
       "favicon.png":"assets/favicon.png",
       "fosshost.png":"assets/fosshost.png"
    },
