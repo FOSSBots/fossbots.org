@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://mirahezebots.org/sitemap.xml
+Sitemap: https://fossbots.org/sitemap.xml
