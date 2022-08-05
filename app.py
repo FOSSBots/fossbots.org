@@ -16,7 +16,7 @@ def display_content(path, config):
             docs = 'href="documentation"'
             contribs = 'href="contribs"'
             about = 'href="about"'
-            sourcecode = 'href="https://wiki.mirahezebots.org/wiki/Source_Code"'
+            sourcecode = 'href="https://wiki.fossbots.org/wiki/Source_Code"'
             if path == 'index':
                 index = 'class="active" href="/"'
             if path == 'about':
