@@ -19,6 +19,6 @@ flake8-quotes==3.3.1
 flake8-simplify==0.19.3
 flake8-pytest==1.4
 pipdeptree==2.3.3
-wheel>=0.36.2,<0.38.0
+wheel>=0.36.2,<0.39.0
 packaging>=20.8
 bandit==1.7.4
